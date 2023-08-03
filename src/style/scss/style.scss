@@ -1,0 +1,14 @@
+@use 'reset';
+@use 'variables' as *;
+@use 'header';
+@use 'sideBar';
+//@use '_mixins' as *;
+
+body {
+  background-color: $background;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  //position: relative;
+  //width: 1440px;
+}
