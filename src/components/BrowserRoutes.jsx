@@ -5,7 +5,7 @@ import ErrorPage from "./ErrorPage"
 import TasksPage from '../pages/TasksPage'
 import DivisionsPage from '../pages/DivisionsPage'
 import ColleaguesPage from '../pages/ColleaguesPage'
-import NewColleauge from "../pages/NewColleauge"
+import NewColleaugePage from "../pages/NewColleaugePage"
 import UsersPage from '../pages/UsersPage'
 import AddressesPage from '../pages/AddressesPage'
 import RoutesPage from '../pages/RoutesPage'
@@ -37,7 +37,7 @@ const BrowserRoutes = () => {
         },
         {
           path: "new-colleague",
-          element: <NewColleauge />
+          element: <NewColleaugePage />
         },
         {
           path: "users",

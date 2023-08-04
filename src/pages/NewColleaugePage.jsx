@@ -66,7 +66,7 @@ const NewColleauge = () => {
                 <input type="text" placeholder="Phone number *" />
               </div>
 
-              <img className="plus" alt="Plus" src="./assets/plus.svg" />
+              <img className="plus" alt="plus sign" src="./assets/plus.svg" />
             </div>
 
             <div className="frame-4">
@@ -102,7 +102,7 @@ const NewColleauge = () => {
                 <p>Other</p>
                 <input type="text" placeholder="Other" />
               </div>
-              <img className="plus" alt="Plus" src="./assets/plus.svg" />
+              <img className="plus" alt="plus sign" src="./assets/plus.svg" />
             </div>
 
             <div className="frame-4">
