@@ -8,7 +8,7 @@ const SearchBarField = () => {
         <button />
       </div>
 
-      <Link to="new-colleague">
+      <Link to="new">
         <button className="add-new-wrapper">
           <p>Add new</p>
         </button>

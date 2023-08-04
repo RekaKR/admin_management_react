@@ -1,21 +1,13 @@
-import { useState, useEffect } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import SearchBarField from '../components/colleagues/SearchBarField'
 import StatisticsField from '../components/colleagues/StatisticsField'
+import Colleague from '../components/colleagues/Colleague'
 
-const ColleaguesPage = () => {
-  const [collegues, setCollegues] = useState([])
-
-  useEffect(() => {
-    fetch('/dummyColleguesData.json')
-      .then(res => res.json())
-      .then(data => setCollegues(data))
-      .catch(err => console.log(err))
-  }, [])
-
+const ColleaguesPage = ({ colleagues }) => {
   return (
     <>
       <SearchBarField />
-      <StatisticsField collegues={collegues} />
+      <StatisticsField collegues={colleagues} />
 
       <div className="colleagues-list">
         <h2>Colleagues</h2>
@@ -28,12 +20,9 @@ const ColleaguesPage = () => {
             <p className="small-text">Edit</p>
           </div>
 
-          <div className="data-container">
-            <div className="name middle-text">Alex Johnson</div>
-            <div className="data long-text">alex.johnson@dpd.com</div>
-            <div className="data long-text">06701234560, 06701234567</div>
-            <img className="edit" alt="edit sign" src="../../assets/edit.png" />
-          </div>
+          {
+            colleagues.map(colleague => <Colleague key={uuidv4()} colleague={colleague} />)
+          }
         </div>
       </div>
     </>

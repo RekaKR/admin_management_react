@@ -11,8 +11,9 @@ import AddressesPage from '../../pages/AddressesPage'
 import RoutesPage from '../../pages/RoutesPage'
 import LogisticsPage from '../../pages/LogisticsPage'
 import SettingsPage from '../../pages/SettingsPage'
+import ColleagueProfilePage from '../../pages/ColleagueProfilePage'
 
-const BrowserRoutes = () => {
+const BrowserRoutes = ({ colleagues }) => {
   const router = createBrowserRouter([
     {
       path: "/",
@@ -24,39 +25,48 @@ const BrowserRoutes = () => {
           element: <TasksPage />
         },
         {
-          path: "tasks",
+          path: "/tasks",
           element: <TasksPage />
         },
         {
-          path: "divisions",
+          path: "/divisions",
           element: <DivisionsPage />
         },
         {
-          path: "colleagues",
-          element: <ColleaguesPage />
+          path: "/colleagues",
+          children: [
+            {
+              index: true,
+              element: <ColleaguesPage colleagues={colleagues} />
+            },
+            {
+              path: "new",
+              element: <NewColleaugePage />
+            },
+            {
+              path: ":id",
+              element: <ColleagueProfilePage colleagues={colleagues} />
+            }
+          ]
         },
         {
-          path: "colleagues/new-colleague",
-          element: <NewColleaugePage />
-        },
-        {
-          path: "users",
+          path: "/users",
           element: <UsersPage />
         },
         {
-          path: "addresses",
+          path: "/addresses",
           element: <AddressesPage />
         },
         {
-          path: "routes",
+          path: "/routes",
           element: <RoutesPage />
         },
         {
-          path: "logistics",
+          path: "/logistics",
           element: <LogisticsPage />
         },
         {
-          path: "settings",
+          path: "/settings",
           element: <SettingsPage />
         }
       ]

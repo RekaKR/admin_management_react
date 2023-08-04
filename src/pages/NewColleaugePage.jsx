@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const NewColleauge = () => {
   return (
     <div className="new-colleauge">
@@ -7,9 +9,11 @@ const NewColleauge = () => {
 
           <div className="frame-2">
             <div className="overlap-group-wrapper">
-              <div className="div-wrapper">
-                <div className="text-wrapper-6">Back</div>
-              </div>
+              <Link to="/colleagues">
+                <div className="div-wrapper">
+                  <button className="text-wrapper-6">Back</button>
+                </div>
+              </Link>
             </div>
 
             <div className="overlap-wrapper">
