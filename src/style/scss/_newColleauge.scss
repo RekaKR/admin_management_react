@@ -1,103 +1,108 @@
 @use 'variables' as *;
 
-.new-colleauge {
+.new-colleague-field {
   background-color: $background;
   width: 100%;
+  max-width: 930px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: absolute;
+  top: 140px;
+  left: 445px;
 
-  .new-colleague-field {
-    width: 930px;
-    height: 1566px;
-    position: absolute;
-    top: 140px;
-    left: 445px;
+  .container {
+    background-color: $light;
+    border: 1px solid $textcolor;
+    border-radius: 20px;
+    height: 100%;
 
-    .container {
-      background-color: $light;
-      border: 1px solid $textcolor;
-      border-radius: 20px;
-      height: 1566px;
-      position: relative;
+    h2 {
+      color: $textcolor;
+      margin: 24px;
+      font-family: "Open Sans-Bold", Helvetica;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: normal;
+    }
 
-      h2 {
-        color: $textcolor;
-        margin: 24px;
+    .button-container {
+      margin: 24px;
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 24px;
+
+      .div-wrapper,
+      .add-btn {
+        background-color: $green;
+        width: 140px;
+        border: 1px solid $textcolor;
+        border-radius: 20px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .add-btn {
+        color: $light;
+
+        &:hover {
+          background-color: $green-hover;
+        }
+      }
+
+      .div-wrapper {
+        background-color: $light;
+      }
+
+      .add-btn,
+      .back-btn {
         font-family: "Open Sans-Bold", Helvetica;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 700;
         letter-spacing: 0;
         line-height: normal;
       }
 
-      .frame-2 {
-        align-items: flex-start;
-        display: inline-flex;
-        gap: 24px;
-        position: absolute;
-        top: 1480px;
-        left: 600px;
+      .back-btn {
+        color: $textcolor;
 
-        .div-wrapper,
-        .overlap-3 {
-          background-color: $green;
-          width: 140px;
-          border: 1px solid $textcolor;
-          border-radius: 20px;
-          height: 62px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .overlap-3:hover {
-          background-color: $green-hover;
-        }
-
-        .div-wrapper {
-          background-color: $light;
-        }
-
-        .text-wrapper-7,
-        .text-wrapper-6 {
-          font-family: "Open Sans-Bold", Helvetica;
-          font-size: 24px;
-          font-weight: 700;
-          letter-spacing: 0;
-          line-height: normal;
-        }
-
-        .text-wrapper-6 {
-          color: $textcolor;
-
-          &:hover {
-            color: $dark;
-          }
-        }
-
-        .text-wrapper-7 {
-          color: $light;
+        &:hover {
+          color: $dark;
         }
       }
+    }
 
-      .frame-3 {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 92px;
-        left: 24px;
-        gap: 24px;
-      }
+    .frame-3 {
+      margin-left: 24px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
 
-      .frame-4 {
+      .inp-container {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         flex: 0 0 auto;
         gap: 8px;
-        position: relative;
+
+        .short-inp {
+          background-color: $light;
+          width: 202px;
+          height: 47px;
+          border: 1px solid $textcolor;
+        }
+
+        .long-inp {
+          background-color: $light;
+          width: 576px;
+          height: 45px;
+          border: 1px solid $textcolor;
+        }
       }
 
       p,
@@ -108,7 +113,6 @@
         font-weight: 400;
         letter-spacing: 0;
         line-height: normal;
-        position: relative;
       }
 
       p {
@@ -124,56 +128,59 @@
         width: 800px;
         height: 45px;
         border: 1px solid $textcolor;
-        //position: relative;
+
+        &::placeholder {
+          padding: 14px;
+        }
       }
 
-      .group-3 {
-        width: 849px;
-        height: 75px;
-        position: relative;
-      }
-
-      .frame-5 {
-        display: inline-flex;
+      .doubble-container {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+        align-items: self-end;
 
-      .plus {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 38px;
-        left: 819px;
-      }
+        button {
+          display: flex;
+          flex-direction: row;
+          cursor: pointer;
 
-      .frame-6 {
-        align-items: flex-start;
-        display: inline-flex;
-        flex: 0 0 auto;
-        gap: 24px;
-        position: relative;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
       }
+    }
 
-      .short-inp {
-        background-color: $light;
-        width: 202px;
-        height: 47px;
-        border: 1px solid $textcolor;
-        //position: relative;
-      }
+    .frame-5 {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-      .long-inp {
-        background-color: $light;
-        width: 576px;
-        height: 45px;
-        border: 1px solid $textcolor;
-        //position: relative;
-      }
+    .frame-10 {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .frame-6 {
+      align-items: flex-start;
+      display: inline-flex;
+      flex: 0 0 auto;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .division {
+      margin-bottom: 0;
+    }
+
+    .phone {
+      margin-bottom: 25px;
+    }
+
+    .other {
+      margin-bottom: 24px;
     }
   }
 }

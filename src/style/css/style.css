@@ -313,28 +313,25 @@ header div p {
   background-color: #43a047;
 }
 
-.new-colleauge {
+.new-colleague-field {
   background-color: #e6e6e6;
   width: 100%;
+  max-width: 930px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.new-colleauge .new-colleague-field {
-  width: 930px;
-  height: 1566px;
   position: absolute;
   top: 140px;
   left: 445px;
 }
-.new-colleauge .new-colleague-field .container {
+.new-colleague-field .container {
   background-color: #ffffff;
   border: 1px solid #414042;
   border-radius: 20px;
-  height: 1566px;
-  position: relative;
+  height: 100%;
 }
-.new-colleauge .new-colleague-field .container h2 {
+.new-colleague-field .container h2 {
   color: #414042;
   margin: 24px;
   font-family: "Open Sans-Bold", Helvetica;
@@ -343,16 +340,14 @@ header div p {
   letter-spacing: 0;
   line-height: normal;
 }
-.new-colleauge .new-colleague-field .container .frame-2 {
-  align-items: flex-start;
+.new-colleague-field .container .button-container {
+  margin: 24px;
   display: inline-flex;
+  align-items: flex-start;
   gap: 24px;
-  position: absolute;
-  top: 1480px;
-  left: 600px;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .div-wrapper,
-.new-colleauge .new-colleague-field .container .frame-2 .overlap-3 {
+.new-colleague-field .container .button-container .div-wrapper,
+.new-colleague-field .container .button-container .add-btn {
   background-color: #4caf50;
   width: 140px;
   border: 1px solid #414042;
@@ -362,107 +357,117 @@ header div p {
   justify-content: center;
   align-items: center;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .overlap-3:hover {
+.new-colleague-field .container .button-container .add-btn {
+  color: #ffffff;
+}
+.new-colleague-field .container .button-container .add-btn:hover {
   background-color: #43a047;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .div-wrapper {
+.new-colleague-field .container .button-container .div-wrapper {
   background-color: #ffffff;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-7,
-.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6 {
+.new-colleague-field .container .button-container .add-btn,
+.new-colleague-field .container .button-container .back-btn {
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6 {
+.new-colleague-field .container .button-container .back-btn {
   color: #414042;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6:hover {
+.new-colleague-field .container .button-container .back-btn:hover {
   color: #000000;
 }
-.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-7 {
-  color: #ffffff;
-}
-.new-colleauge .new-colleague-field .container .frame-3 {
+.new-colleague-field .container .frame-3 {
+  margin-left: 24px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  position: absolute;
-  top: 92px;
-  left: 24px;
   gap: 24px;
 }
-.new-colleauge .new-colleague-field .container .frame-4 {
+.new-colleague-field .container .frame-3 .inp-container {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   flex: 0 0 auto;
   gap: 8px;
-  position: relative;
 }
-.new-colleauge .new-colleague-field .container p,
-.new-colleauge .new-colleague-field .container .text-wrapper-9 {
+.new-colleague-field .container .frame-3 .inp-container .short-inp {
+  background-color: #ffffff;
+  width: 202px;
+  height: 47px;
+  border: 1px solid #414042;
+}
+.new-colleague-field .container .frame-3 .inp-container .long-inp {
+  background-color: #ffffff;
+  width: 576px;
+  height: 45px;
+  border: 1px solid #414042;
+}
+.new-colleague-field .container .frame-3 p,
+.new-colleague-field .container .frame-3 .text-wrapper-9 {
   color: #414042;
   font-family: "Open Sans-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
-  position: relative;
 }
-.new-colleauge .new-colleague-field .container p {
+.new-colleague-field .container .frame-3 p {
   width: 300px;
 }
-.new-colleauge .new-colleague-field .container .text-wrapper-9 {
+.new-colleague-field .container .frame-3 .text-wrapper-9 {
   width: 200px;
 }
-.new-colleauge .new-colleague-field .container input {
+.new-colleague-field .container .frame-3 input {
   background-color: #ffffff;
   width: 800px;
   height: 45px;
   border: 1px solid #414042;
 }
-.new-colleauge .new-colleague-field .container .group-3 {
-  width: 849px;
-  height: 75px;
-  position: relative;
+.new-colleague-field .container .frame-3 input::placeholder {
+  padding: 14px;
 }
-.new-colleauge .new-colleague-field .container .frame-5 {
-  display: inline-flex;
+.new-colleague-field .container .frame-3 .doubble-container {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  align-items: self-end;
 }
-.new-colleauge .new-colleague-field .container .plus {
+.new-colleague-field .container .frame-3 .doubble-container button {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.new-colleague-field .container .frame-3 .doubble-container button img {
   width: 30px;
   height: 30px;
-  position: absolute;
-  top: 38px;
-  left: 819px;
 }
-.new-colleauge .new-colleague-field .container .frame-6 {
+.new-colleague-field .container .frame-5 {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.new-colleague-field .container .frame-10 {
+  display: inline-flex;
+  flex-direction: column;
+}
+.new-colleague-field .container .frame-6 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   gap: 24px;
-  position: relative;
+  margin-bottom: 24px;
 }
-.new-colleauge .new-colleague-field .container .short-inp {
-  background-color: #ffffff;
-  width: 202px;
-  height: 47px;
-  border: 1px solid #414042;
+.new-colleague-field .container .division {
+  margin-bottom: 0;
 }
-.new-colleauge .new-colleague-field .container .long-inp {
-  background-color: #ffffff;
-  width: 576px;
-  height: 45px;
-  border: 1px solid #414042;
+.new-colleague-field .container .phone {
+  margin-bottom: 25px;
+}
+.new-colleague-field .container .other {
+  margin-bottom: 24px;
 }
 
 body {

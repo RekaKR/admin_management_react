@@ -4,77 +4,267 @@
     "name": "Alex Johnson",
     "email": "alex.johnson@dpd.com",
     "phoneNumber": [
-      "06701234560",
-      "06701234567",
-      "06701234567"
-    ]
+      {
+        "number": "06701234560"
+      },
+      {
+        "number": "06701234567"
+      },
+      {
+        "number": "06701234567"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      },
+      {
+        "country": "United Yep",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 2,
     "name": "Jane Smith",
     "email": "jane.smith@dpd.com",
     "phoneNumber": [
-      "06701234561"
-    ]
+      {
+        "number": "06701234561"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 3,
     "name": "Emily Brown",
     "email": "emily.brown@dpd.com",
     "phoneNumber": [
-      "06701234562",
-      "06701234568"
-    ]
+      {
+        "number": "06701234562"
+      },
+      {
+        "number": "06701234568"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 4,
     "name": "Michael Williams",
     "email": "michael.williams@dpd.com",
-    "phoneNumber": []
+    "phoneNumber": [],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 5,
     "name": "Sophia Martinez",
     "email": "sophia.martinez@dpd.com",
     "phoneNumber": [
-      "06701234564",
-      "06701234569"
-    ]
+      {
+        "number": "06701234564"
+      },
+      {
+        "number": "06701234569"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 6,
     "name": "William Wilson",
     "email": "william.wilson@dpd.com",
-    "phoneNumber": []
+    "phoneNumber": [],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 7,
     "name": "James Anderson",
     "email": "james.anderson@dpd.com",
     "phoneNumber": [
-      "06701234565"
-    ]
+      {
+        "number": "06701234565"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 8,
     "name": "Emma Taylor",
     "email": "emma.taylor@dpd.com",
     "phoneNumber": [
-      "06701234566"
-    ]
+      {
+        "number": "06701234566"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 9,
     "name": "Emma Wilson",
     "email": "emma.wilson@dpd.com",
-    "phoneNumber": []
+    "phoneNumber": [],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   },
   {
     "id": 10,
     "name": "Olivia Davis",
     "email": "olivia.davis@dpd.com",
     "phoneNumber": [
-      "06701234563"
-    ]
+      {
+        "number": "06701234563"
+      }
+    ],
+    "birthday": "1990-05-15",
+    "birthPlace": "New York",
+    "motherName": "Jennifer Smith",
+    "socSecNumber": "123-45-6789",
+    "tax": "A1234567",
+    "addresses": [
+      {
+        "country": "United States",
+        "postalCode": "10001",
+        "city": "New York",
+        "street": "Broadway",
+        "houseNumber": "123",
+        "other": "Apartment 4B"
+      }
+    ],
+    "division": "Logistics"
   }
 ]

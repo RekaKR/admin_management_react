@@ -1,120 +1,78 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import NewColleagueButtons from "../components/assets/NewColleagueButtons";
+import NewColleagueForm from "../components/colleagues/NewColleagueForm";
 
 const NewColleauge = () => {
+  const [phoneNumbers, setPhoneNumbers] = useState([{ number: '' }]);
+
+  const [addresses, setAddresses] = useState([{
+    country: '',
+    postalCode: '',
+    city: '',
+    street: '',
+    houseNumber: '',
+    other: ''
+  }])
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    birthday: "",
+    birthPlace: "",
+    motherName: "",
+    socSecNumber: "",
+    tax: "",
+    email: "",
+    phoneNumber: phoneNumbers.map(phone => ({ number: phone.number })),
+    address: addresses,
+    division: ""
+  })
+
+  const handlePhoneNumberChange = (i, value) => {
+    const newPhoneNumbers = [...phoneNumbers]
+    newPhoneNumbers[i].number = value
+    setPhoneNumbers(newPhoneNumbers)
+  }
+
+
+  const handleInputChange = event => {
+    const { name, value } = event.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: value
+    }))
+  }
+
+  const handleFormSubmit = () => {
+    fetch('/dummyColleguesData.json', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "name": `${formData.firstName} ${formData.lastName}`,
+        "email": formData.email,
+        "phoneNumber": formData.phoneNumber,
+        "birthday": formData.birthday,
+        "birthPlace": formData.birthPlace,
+        "motherName": formData.motherName,
+        "socSecNumber": formData.socSecNumber,
+        "tax": formData.tax,
+        "addresses": formData.address,
+        "division": formData.division
+      }),
+    })
+      .then(res => res.json())
+      .then(data => console.log("Success:", data))
+      .catch(err => console.error("Error:", err))
+  }
+
   return (
-    <div className="new-colleauge">
-      <div className="new-colleague-field">
-        <div className="container">
-          <h2>New Colleague</h2>
-
-          <div className="frame-2">
-            <div className="overlap-group-wrapper">
-              <Link to="/colleagues">
-                <div className="div-wrapper">
-                  <button className="text-wrapper-6">Back</button>
-                </div>
-              </Link>
-            </div>
-
-            <div className="overlap-wrapper">
-              <div className="overlap-3">
-                <div className="text-wrapper-7">Add</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="frame-3">
-            <div className="frame-4">
-              <p>First name *</p>
-              <input type="text" placeholder="First name *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Last name *</p>
-              <input type="text" placeholder="Last name *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Date of birth *</p>
-              <input type="text" placeholder="Date of birth *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Place of birth *</p>
-              <input type="text" placeholder="Place of birth *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Mother's maiden name *</p>
-              <input type="text" placeholder="Mother's maiden name *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Social Security Number *</p>
-              <input type="text" placeholder="Social Security Number *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Tax Identification Number *</p>
-              <input type="text" placeholder="Tax Identification Number *" />
-            </div>
-
-            <div className="frame-4">
-              <p>Email address *</p>
-              <input type="text" placeholder="Email address *" />
-            </div>
-
-            <div className="group-3">
-              <div className="frame-5">
-                <p>Phone number *</p>
-                <input type="text" placeholder="Phone number *" />
-              </div>
-
-              <img className="plus" alt="plus sign" src="./assets/plus.svg" />
-            </div>
-
-            <div className="frame-4">
-              <p>Country *</p>
-              <input type="text" placeholder="Country *" />
-            </div>
-
-            <div className="frame-6">
-              <div className="frame-4">
-                <div className="text-wrapper-9">Postal code *</div>
-                <input className="short-inp" type="text" placeholder="Postal code *" />
-              </div>
-              <div className="frame-4">
-                <p>City *</p>
-                <input className="long-inp" type="text" placeholder="City *" />
-              </div>
-            </div>
-
-            <div className="frame-6">
-              <div className="frame-4">
-                <p>Street *</p>
-                <input className="long-inp" type="text" placeholder="Street *" />
-              </div>
-
-              <div className="frame-4">
-                <div className="text-wrapper-9">House number *</div>
-                <input className="short-inp" type="text" placeholder="House number *" />
-              </div>
-            </div>
-
-            <div className="group-3">
-              <div className="frame-5">
-                <p>Other</p>
-                <input type="text" placeholder="Other" />
-              </div>
-              <img className="plus" alt="plus sign" src="./assets/plus.svg" />
-            </div>
-
-            <div className="frame-4">
-              <p>Division *</p>
-              <input type="text" placeholder="Division *" />
-            </div>
-          </div>
-        </div>
+    <div className="new-colleague-field">
+      <div className="container">
+        <h2>New Colleague</h2>
+        <NewColleagueForm />
+        <NewColleagueButtons handleFormSubmit={handleFormSubmit} />
       </div>
     </div>
   )
