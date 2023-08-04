@@ -1,74 +1,41 @@
-import React from 'react'
-import SearchBarField from '../components/SearchBarField'
-
-const dummyColleguesData = [
-  {
-    name: "Alex Johnson",
-    email: "alex.johnson@dpd.com",
-    phioneNumber: [
-      "06701234560",
-      "06701234567"
-    ]
-  }
-]
+import { useState, useEffect } from 'react'
+import SearchBarField from '../components/colleagues/SearchBarField'
+import StatisticsField from '../components/colleagues/StatisticsField'
 
 const ColleaguesPage = () => {
+  const [collegues, setCollegues] = useState([])
+
+  useEffect(() => {
+    fetch('/dummyColleguesData.json')
+      .then(res => res.json())
+      .then(data => setCollegues(data))
+      .catch(err => console.log(err))
+  }, [])
+
   return (
     <>
       <SearchBarField />
-
-      <div className="overal-statistics">
-        <div className="frame-2">
-          <div className="group-4">
-            <div className="group-5">
-              <div className="group-wrapper">
-                <div className="group-6">
-                  <div className="text-wrapper-7">COLLEAGUES</div>
-                  <div className="text-wrapper-8">38</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="group-4">
-            <div className="overlap-4">
-              <div className="group-7">
-                <div className="text-wrapper-7">COMPLETE</div>
-                <div className="text-wrapper-9">30</div>
-              </div>
-            </div>
-          </div>
-          <div className="group-4">
-            <div className="overlap-5">
-              <div className="group-6">
-                <div className="text-wrapper-7">INCOMPLETE</div>
-                <div className="text-wrapper-10">8</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <StatisticsField collegues={collegues} />
 
       <div className="colleagues-list">
-        <div className="overlap-6">
-          <div className="text-wrapper-11">Colleagues</div>
+        <div className="text-wrapper-11">Colleagues</div>
 
-          <div className="frame-3">
-            <div className="frame-4">
-              <div className="text-wrapper-12">Name</div>
-              <div className="text-wrapper-13">Email</div>
-              <div className="text-wrapper-13">Phone number</div>
-              <div className="text-wrapper-14">Edit</div>
+        <div className="frame-3">
+          <div className="frame-4">
+            <div className="text-wrapper-12">Name</div>
+            <div className="text-wrapper-13">Email</div>
+            <div className="text-wrapper-13">Phone number</div>
+            <div className="text-wrapper-14">Edit</div>
+          </div>
+
+          <div className="frame-5">
+            <div className="frame-6">
+              <div className="text-wrapper-15">Alex Johnson</div>
+              <div className="text-wrapper-16">alex.johnson@dpd.com</div>
+              <div className="text-wrapper-16">06701234560, 06701234567</div>
+              <img className="edit" alt="edit sign" src="../../assets/edit.png" />
             </div>
-
-            <div className="frame-5">
-              <div className="frame-6">
-                <div className="text-wrapper-15">Alex Johnson</div>
-                <div className="text-wrapper-16">alex.johnson@dpd.com</div>
-                <div className="text-wrapper-16">06701234560, 06701234567</div>
-                <img className="edit" alt="edit sign" src="../../assets/edit.png" />
-              </div>
-              {/*
+            {/*
                 <div className="frame-6">
                   <div className="text-wrapper-15">Jane Smith</div>
                   <div className="text-wrapper-16">jane.smith@dpd.com</div>
@@ -124,7 +91,6 @@ const ColleaguesPage = () => {
                   <img className="edit" alt="edit sign" src="../../assets/edit.png" />
                 </div>
                 */}
-            </div>
           </div>
         </div>
       </div>
