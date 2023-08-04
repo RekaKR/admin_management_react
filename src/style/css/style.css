@@ -336,73 +336,54 @@ header div p {
 }
 .new-colleauge .new-colleague-field .container h2 {
   color: #414042;
+  margin: 24px;
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  top: 24px;
-  left: 24px;
 }
 .new-colleauge .new-colleague-field .container .frame-2 {
   align-items: flex-start;
   display: inline-flex;
   gap: 24px;
-  left: 602px;
   position: absolute;
-  top: 1482px;
+  top: 1480px;
+  left: 600px;
 }
-.new-colleauge .new-colleague-field .container .overlap-group-wrapper {
-  height: 60px;
-  position: relative;
-  width: 142px;
-}
-.new-colleauge .new-colleague-field .container .div-wrapper {
-  background-color: #ffffff;
-  border: 1px solid #414042;
-  border-radius: 20px;
-  height: 62px;
-  left: -1px;
-  position: relative;
-  top: -1px;
-}
-.new-colleauge .new-colleague-field .container .text-wrapper-6 {
-  color: #414042;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  left: 41px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 14px;
-}
-.new-colleauge .new-colleague-field .container .overlap-wrapper {
-  height: 60px;
-  margin-right: -2px;
-  position: relative;
-  width: 142px;
-}
-.new-colleauge .new-colleague-field .container .overlap-3 {
+.new-colleauge .new-colleague-field .container .frame-2 .div-wrapper,
+.new-colleauge .new-colleague-field .container .frame-2 .overlap-3 {
   background-color: #4caf50;
+  width: 140px;
   border: 1px solid #414042;
   border-radius: 20px;
   height: 62px;
-  left: -1px;
-  position: relative;
-  top: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.new-colleauge .new-colleague-field .container .text-wrapper-7 {
-  color: #ffffff;
+.new-colleauge .new-colleague-field .container .frame-2 .overlap-3:hover {
+  background-color: #43a047;
+}
+.new-colleauge .new-colleague-field .container .frame-2 .div-wrapper {
+  background-color: #ffffff;
+}
+.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-7,
+.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6 {
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 24px;
   font-weight: 700;
-  left: 46px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  top: 14px;
+}
+.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6 {
+  color: #414042;
+}
+.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-6:hover {
+  color: #000000;
+}
+.new-colleauge .new-colleague-field .container .frame-2 .text-wrapper-7 {
+  color: #ffffff;
 }
 .new-colleauge .new-colleague-field .container .frame-3 {
   display: inline-flex;
