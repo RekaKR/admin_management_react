@@ -1,16 +1,16 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Root from "../routes/RootRoute"
+import Root from "./RootRoute"
 import ErrorPage from "./ErrorPage"
-import TasksPage from '../pages/TasksPage'
-import DivisionsPage from '../pages/DivisionsPage'
-import ColleaguesPage from '../pages/ColleaguesPage'
-import NewColleaugePage from "../pages/NewColleaugePage"
-import UsersPage from '../pages/UsersPage'
-import AddressesPage from '../pages/AddressesPage'
-import RoutesPage from '../pages/RoutesPage'
-import LogisticsPage from '../pages/LogisticsPage'
-import SettingsPage from '../pages/SettingsPage'
+import TasksPage from '../../pages/TasksPage'
+import DivisionsPage from '../../pages/DivisionsPage'
+import ColleaguesPage from '../../pages/ColleaguesPage'
+import NewColleaugePage from "../../pages/NewColleaugePage"
+import UsersPage from '../../pages/UsersPage'
+import AddressesPage from '../../pages/AddressesPage'
+import RoutesPage from '../../pages/RoutesPage'
+import LogisticsPage from '../../pages/LogisticsPage'
+import SettingsPage from '../../pages/SettingsPage'
 
 const BrowserRoutes = () => {
   const router = createBrowserRouter([
@@ -36,7 +36,7 @@ const BrowserRoutes = () => {
           element: <ColleaguesPage />
         },
         {
-          path: "new-colleague",
+          path: "colleagues/new-colleague",
           element: <NewColleaugePage />
         },
         {

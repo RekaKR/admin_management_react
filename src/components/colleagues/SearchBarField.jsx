@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 const SearchBarField = () => {
   return (
@@ -8,9 +8,11 @@ const SearchBarField = () => {
         <button />
       </div>
 
-      <div className="add-new-wrapper">
-        <p>Add new</p>
-      </div>
+      <Link to="new-colleague">
+        <button className="add-new-wrapper">
+          <p>Add new</p>
+        </button>
+      </Link>
     </div>
   )
 }

@@ -40,7 +40,7 @@
 
   .add-new-wrapper {
     background-color: $green;
-    width: 188px;
+    width: 160px;
     height: 60px;
     border: 1px solid $textcolor;
     border-radius: 20px;
@@ -55,6 +55,10 @@
       font-weight: 700;
       letter-spacing: 0;
       line-height: normal;
+    }
+
+    &:hover {
+      background-color: $green-hover;
     }
   }
 }

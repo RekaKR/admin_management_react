@@ -1,5 +1,3 @@
-import React from 'react'
-
 const StatisticsField = ({ collegues }) => {
   const dataLength = collegues?.length
 

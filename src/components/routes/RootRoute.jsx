@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import Header from '../components/Header'
-import SideBar from '../components/SideBar'
+import Header from '../Header'
+import SideBar from '../SideBar'
 
 const RootRoute = () => {
   return (

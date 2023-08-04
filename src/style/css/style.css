@@ -111,12 +111,6 @@ header div p {
   letter-spacing: 0;
   line-height: normal;
   position: relative;
-  /*
-  .active-p {
-    font-family: "Open Sans-ExtraBold", Helvetica;
-    font-weight: 800;
-  }
-  */
 }
 .side-bar .links p:hover, .side-bar .links p:active {
   color: #000000;
@@ -152,137 +146,65 @@ header div p {
 }
 
 .colleagues-list {
-  height: 646px;
-  width: 930px;
   background-color: #ffffff;
+  width: 100%;
+  max-width: 930px;
+  height: 100%;
+  padding: 24px;
   border: 1px solid #414042;
   border-radius: 20px;
 }
-.colleagues-list .text-wrapper-11 {
+.colleagues-list h2,
+.colleagues-list .middle-text,
+.colleagues-list .long-text,
+.colleagues-list .small-text,
+.colleagues-list .name,
+.colleagues-list .data {
   color: #414042;
   font-family: "Open Sans-Bold", Helvetica;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
-  left: 24px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  top: 24px;
+}
+.colleagues-list h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 .colleagues-list .frame-3 {
-  align-items: flex-start;
   display: inline-flex;
   flex-direction: column;
   gap: 22px;
-  left: 24px;
-  position: absolute;
-  top: 92px;
 }
-.colleagues-list .frame-3 .frame-4 {
-  align-items: center;
+.colleagues-list .frame-3 .data-container {
   display: flex;
   flex: 0 0 auto;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
   width: 882px;
 }
-.colleagues-list .frame-3 .frame-4 .text-wrapper-12 {
-  color: #414042;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
+.colleagues-list .frame-3 .data-container .middle-text {
   width: 200px;
 }
-.colleagues-list .frame-3 .frame-4 .text-wrapper-13 {
-  color: #414042;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
+.colleagues-list .frame-3 .data-container .long-text {
   width: 250px;
 }
-.colleagues-list .frame-3 .frame-4 .text-wrapper-14 {
-  color: #414042;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  position: relative;
+.colleagues-list .frame-3 .data-container .small-text {
   width: 40px;
 }
-.colleagues-list .frame-3 .frame-5 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 25px;
-  position: relative;
-}
-.colleagues-list .frame-3 .frame-5 .frame-6 {
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
-  justify-content: space-between;
-  position: relative;
-  width: 882px;
-}
-.colleagues-list .frame-3 .frame-5 .frame-6 .text-wrapper-15 {
-  color: #414042;
-  font-family: "Open Sans-Bold", Helvetica;
+.colleagues-list .frame-3 .data-container .name,
+.colleagues-list .frame-3 .data-container .data {
   font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: 200px;
 }
-.colleagues-list .frame-3 .frame-5 .frame-6 .text-wrapper-16 {
-  color: #414042;
-  font-family: "Open Sans-Regular", Helvetica;
-  font-size: 16px;
+.colleagues-list .frame-3 .data-container .data {
   font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: 250px;
 }
-.colleagues-list .frame-3 .frame-5 .frame-6 .edit {
+.colleagues-list .frame-3 .data-container .edit {
+  width: 40px;
   height: 25px;
+  margin-top: -10px;
   object-fit: cover;
   position: relative;
-  width: 40px;
-}
-.colleagues-list .frame-3 .frame-5 .frame-6 .text-wrapper-17 {
-  color: #f44336;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: 200px;
-}
-.colleagues-list .frame-3 .frame-5 .frame-6 .text-wrapper-18 {
-  color: #f44336;
-  font-family: "Open Sans-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-top: -1px;
-  position: relative;
-  width: 250px;
 }
 
 .statistics {
@@ -364,7 +286,7 @@ header div p {
 }
 .search-bar-field .add-new-wrapper {
   background-color: #4caf50;
-  width: 188px;
+  width: 160px;
   height: 60px;
   border: 1px solid #414042;
   border-radius: 20px;
@@ -379,6 +301,9 @@ header div p {
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
+}
+.search-bar-field .add-new-wrapper:hover {
+  background-color: #43a047;
 }
 
 .new-colleauge {
