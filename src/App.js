@@ -1,13 +1,11 @@
 import React from "react"
-import "./style.css"
-import { NewColleauge } from "./NewColleauge";
+import "./style/css/style.css"
+import BrowserRoutes from './components/BrowserRoutes'
 
 function App() {
   return (
-    <div className="App">
-      <NewColleauge />
-    </div>
-  );
+    <BrowserRoutes />
+  )
 }
 
-export default App;
+export default App
