@@ -2,6 +2,7 @@
 @use 'variables' as *;
 @use 'header';
 @use 'sideBar';
+@use 'newColleauge';
 //@use '_mixins' as *;
 
 body {
@@ -11,4 +12,10 @@ body {
   overflow-x: hidden;
   //position: relative;
   //width: 1440px;
+}
+
+.bla {
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }

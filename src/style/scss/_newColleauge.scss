@@ -1,0 +1,197 @@
+@use 'variables' as *;
+
+.new-colleauge {
+  background-color: $background;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .new-colleague-field {
+    width: 930px;
+    height: 1566px;
+    position: absolute;
+    top: 140px;
+    left: 445px;
+
+    .container {
+      background-color: $light;
+      border: 1px solid $textcolor;
+      border-radius: 20px;
+      height: 1566px;
+      position: relative;
+
+      h2 {
+        color: $textcolor;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: normal;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+      }
+
+      .frame-2 {
+        align-items: flex-start;
+        display: inline-flex;
+        gap: 24px;
+        left: 602px;
+        position: absolute;
+        top: 1482px;
+      }
+
+      .overlap-group-wrapper {
+        height: 60px;
+        position: relative;
+        width: 142px;
+      }
+
+      .div-wrapper {
+        background-color: $light;
+        border: 1px solid $textcolor;
+        border-radius: 20px;
+        height: 62px;
+        left: -1px;
+        position: relative;
+        top: -1px;
+      }
+
+      .text-wrapper-6 {
+        color: $textcolor;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 24px;
+        font-weight: 700;
+        left: 41px;
+        letter-spacing: 0;
+        line-height: normal;
+        position: absolute;
+        top: 14px;
+      }
+
+      .overlap-wrapper {
+        height: 60px;
+        margin-right: -2px;
+        position: relative;
+        width: 142px;
+      }
+
+      .overlap-3 {
+        background-color: $green;
+        border: 1px solid $textcolor;
+        border-radius: 20px;
+        height: 62px;
+        left: -1px;
+        position: relative;
+        top: -1px;
+      }
+
+      .text-wrapper-7 {
+        color: $light;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 24px;
+        font-weight: 700;
+        left: 46px;
+        letter-spacing: 0;
+        line-height: normal;
+        position: absolute;
+        top: 14px;
+      }
+
+      .frame-3 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 92px;
+        left: 24px;
+        gap: 24px;
+      }
+
+      .frame-4 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+      }
+
+      p,
+      .text-wrapper-9 {
+        color: $textcolor;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: normal;
+        position: relative;
+      }
+
+      p {
+        width: 300px;
+      }
+
+      .text-wrapper-9 {
+        width: 200px;
+      }
+
+      input {
+        background-color: $light;
+        width: 800px;
+        height: 45px;
+        border: 1px solid $textcolor;
+        //position: relative;
+      }
+
+      .group-3 {
+        width: 849px;
+        height: 75px;
+        position: relative;
+      }
+
+      .frame-5 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .plus {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 38px;
+        left: 819px;
+      }
+
+      .frame-6 {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 24px;
+        position: relative;
+      }
+
+      .short-inp {
+        background-color: $light;
+        width: 202px;
+        height: 47px;
+        border: 1px solid $textcolor;
+        //position: relative;
+      }
+
+      .long-inp {
+        background-color: $light;
+        width: 576px;
+        height: 45px;
+        border: 1px solid $textcolor;
+        //position: relative;
+      }
+    }
+  }
+}

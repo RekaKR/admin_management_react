@@ -3,22 +3,21 @@
 .side-bar {
   background-color: $light;
   width: 400px;
+  //width: 25%;
   height: 100%;
   border-right: 1px solid $textcolor;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-
-  //min-height: 1748px;
-  //position: relative;
+  //display: flex;
 
   .container {
+    width: 334px;
     height: 132px;
-    left: 33px;
     position: absolute;
     top: 20px;
-    width: 336px;
+    left: 33px;
 
     .logo {
       width: 141px;
@@ -60,14 +59,19 @@
       letter-spacing: 0;
       line-height: normal;
       position: relative;
-    }
 
-    /*
+      &:hover {
+        color: $dark;
+        //font-family: "Open Sans-ExtraBold", Helvetica;
+        //font-weight: 800;
+      }
+
+      /*
       .active-p {
         font-family: "Open Sans-ExtraBold", Helvetica;
         font-weight: 800;
       }
       */
-
+    }
   }
 }
