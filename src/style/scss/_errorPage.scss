@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+#error-page {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1,
+  p {
+    color: $dark;
+    font-family: "Open Sans-Bold", Helvetica;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 10rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
