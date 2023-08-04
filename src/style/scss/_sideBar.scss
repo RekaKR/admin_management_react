@@ -60,7 +60,8 @@
       line-height: normal;
       position: relative;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $dark;
         //font-family: "Open Sans-ExtraBold", Helvetica;
         //font-weight: 800;

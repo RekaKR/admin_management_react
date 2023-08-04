@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.statistics {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 45px;
+
+  .statistic-container {
+    width: 280px;
+    height: 140px;
+    background-color: $light;
+    border: 1px solid $textcolor;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-container {
+      text-align: center;
+
+      .appellation {
+        color: $dark;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .number {
+        color: $dark;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 38px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .green {
+    background-color: $green;
+  }
+
+  .red {
+    background-color: $red;
+  }
+}
