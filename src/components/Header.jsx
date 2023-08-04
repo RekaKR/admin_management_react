@@ -1,12 +1,12 @@
 const Header = () => {
-
   const dummyName = "Réka"
+  const dummyProfileImage = "./assets/profile_img.jpg"
 
   return (
     <header>
-      <div className="group">
-        <img className="profile-img" alt="Profile img" src="./assets/profile_img.jpg" />
+      <div>
         <p>Hi, {dummyName}</p>
+        <img className="profile-img" alt="Profile img" src={dummyProfileImage} />
       </div>
     </header>
   )
