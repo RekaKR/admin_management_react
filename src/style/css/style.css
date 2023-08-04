@@ -200,11 +200,18 @@ header div p {
   font-weight: 400;
 }
 .colleagues-list .frame-3 .data-container .edit {
-  width: 40px;
+  width: 25px;
   height: 25px;
-  margin-top: -10px;
+  margin-top: -5px;
   object-fit: cover;
   position: relative;
+  cursor: pointer;
+}
+.colleagues-list .frame-3 .data-container .edit:hover {
+  fill: #4caf50;
+}
+.colleagues-list .frame-3 .no-phone-number p {
+  color: #f44336 !important;
 }
 
 .statistics {
