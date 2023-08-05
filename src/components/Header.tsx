@@ -1,5 +1,7 @@
-const Header = () => {
-  const dummyName = "Réka"
+import React from 'react'
+
+const Header: React.FunctionComponent = () => {
+  const dummyName: string = "Réka"
 
   return (
     <header>
