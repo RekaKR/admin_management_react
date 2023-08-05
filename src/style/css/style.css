@@ -327,13 +327,16 @@ header div p {
 }
 .new-colleague-field .container {
   background-color: #ffffff;
+  padding: 24px;
   border: 1px solid #414042;
   border-radius: 20px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .new-colleague-field .container h2 {
   color: #414042;
-  margin: 24px;
+  margin-bottom: 24px;
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 32px;
   font-weight: 700;
@@ -341,9 +344,9 @@ header div p {
   line-height: normal;
 }
 .new-colleague-field .container .button-container {
-  margin: 24px;
+  margin-top: 24px;
   display: inline-flex;
-  align-items: flex-start;
+  justify-content: flex-end;
   gap: 24px;
 }
 .new-colleague-field .container .button-container .div-wrapper,
@@ -381,7 +384,6 @@ header div p {
   color: #000000;
 }
 .new-colleague-field .container .frame-3 {
-  margin-left: 24px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -393,6 +395,9 @@ header div p {
   align-items: flex-start;
   flex: 0 0 auto;
   gap: 8px;
+}
+.new-colleague-field .container .frame-3 .inp-container span {
+  color: #f44336;
 }
 .new-colleague-field .container .frame-3 .inp-container .short-inp {
   background-color: #ffffff;
@@ -440,7 +445,7 @@ header div p {
   flex-direction: row;
   cursor: pointer;
 }
-.new-colleague-field .container .frame-3 .doubble-container button img {
+.new-colleague-field .container .frame-3 .doubble-container button .img {
   width: 30px;
   height: 30px;
 }
@@ -468,6 +473,133 @@ header div p {
 }
 .new-colleague-field .container .other {
   margin-bottom: 24px;
+}
+
+.colleague-profile {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 930px;
+  height: 100%;
+  padding: 24px;
+  border: 1px solid #414042;
+  border-radius: 20px;
+  position: relative;
+  top: 140px;
+  left: 445px;
+}
+.colleague-profile .text-wrapper-5 {
+  color: #414042;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 24px;
+}
+.colleague-profile .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 25px;
+  left: 24px;
+  top: 92px;
+}
+.colleague-profile .frame-2 .frame-3 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  width: 882px;
+}
+.colleague-profile .frame-2 .frame-3 .text-wrapper-6 {
+  color: #414042;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  width: 300px;
+}
+.colleague-profile .frame-2 .frame-3 .text-wrapper-7 {
+  color: #414042;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  width: 440px;
+}
+.colleague-profile .frame-2 .frame-3 .edit {
+  height: 25px;
+  object-fit: cover;
+  width: 40px;
+}
+.colleague-profile .frame-2 .frame-3 .img {
+  height: 25px;
+  width: 28px;
+}
+.colleague-profile .frame-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 24px;
+  left: 602px;
+  top: 652px;
+}
+.colleague-profile .frame-5 .overlap-group-wrapper {
+  height: 60px;
+  position: relative;
+  width: 142px;
+}
+.colleague-profile .frame-5 .overlap-group-wrapper .div-wrapper {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #414042;
+  border-radius: 20px;
+  height: 62px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+}
+.colleague-profile .frame-5 .overlap-group-wrapper .div-wrapper .text-wrapper-9 {
+  color: #414042;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
+}
+.colleague-profile .frame-5 .overlap-wrapper {
+  height: 60px;
+  margin-right: -2px;
+  position: relative;
+  width: 142px;
+}
+.colleague-profile .frame-5 .overlap-wrapper .overlap-3 {
+  background-color: #f44336;
+  border: 1px solid;
+  border-color: #414042;
+  border-radius: 20px;
+  height: 62px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+}
+.colleague-profile .frame-5 .overlap-wrapper .overlap-3 .text-wrapper-10 {
+  color: #ffffff;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 31px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 14px;
 }
 
 body {
