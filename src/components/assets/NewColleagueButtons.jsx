@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const NewColleagueButtons = ({ handleFormSubmit }) => {
+const NewColleagueButtons = () => {
   return (
     <div className="button-container">
       <Link to="/colleagues">
@@ -9,10 +9,11 @@ const NewColleagueButtons = ({ handleFormSubmit }) => {
         </div>
       </Link>
 
-      <button className="add-btn" onClick={handleFormSubmit}>
+      <button type="submit" className="add-btn">
         Add
       </button>
     </div>
+
   )
 }
 
