@@ -487,15 +487,15 @@ header div p {
   top: 140px;
   left: 445px;
 }
-.colleague-profile .text-wrapper-5 {
+.colleague-profile h2 {
   color: #414042;
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 32px;
   font-weight: 700;
-  left: 24px;
   letter-spacing: 0;
   line-height: normal;
-  top: 24px;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 .colleague-profile .frame-2 {
   align-items: flex-start;
@@ -519,7 +519,6 @@ header div p {
   font-weight: 700;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: -1px;
   width: 300px;
 }
 .colleague-profile .frame-2 .frame-3 .text-wrapper-7 {
@@ -529,24 +528,27 @@ header div p {
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: -1px;
   width: 440px;
+  resize: none;
 }
 .colleague-profile .frame-2 .frame-3 .edit {
+  width: 40px;
   height: 25px;
   object-fit: cover;
-  width: 40px;
+}
+.colleague-profile .frame-2 .frame-3 .delete {
+  fill: #f44336;
 }
 .colleague-profile .frame-2 .frame-3 .img {
-  height: 25px;
   width: 28px;
+  height: 25px;
 }
 .colleague-profile .frame-5 {
   align-items: flex-start;
   display: inline-flex;
   gap: 24px;
-  left: 602px;
-  top: 652px;
+  left: 600px;
+  top: 650px;
 }
 .colleague-profile .frame-5 .overlap-group-wrapper {
   height: 60px;
@@ -559,9 +561,7 @@ header div p {
   border-color: #414042;
   border-radius: 20px;
   height: 62px;
-  left: -1px;
   position: relative;
-  top: -1px;
 }
 .colleague-profile .frame-5 .overlap-group-wrapper .div-wrapper .text-wrapper-9 {
   color: #414042;
@@ -585,10 +585,8 @@ header div p {
   border: 1px solid;
   border-color: #414042;
   border-radius: 20px;
-  height: 62px;
-  left: -1px;
+  height: 60px;
   position: relative;
-  top: -1px;
 }
 .colleague-profile .frame-5 .overlap-wrapper .overlap-3 .text-wrapper-10 {
   color: #ffffff;
@@ -600,6 +598,22 @@ header div p {
   line-height: normal;
   position: absolute;
   top: 14px;
+}
+
+.alert-message {
+  color: #ffffff;
+  width: 300px;
+  height: 80px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 body {

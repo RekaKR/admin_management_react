@@ -1,0 +1,164 @@
+@use 'variables' as *;
+
+.colleague-profile {
+  background-color: $light;
+  width: 100%;
+  max-width: 930px;
+  height: 100%;
+  padding: 24px;
+  border: 1px solid $textcolor;
+  border-radius: 20px;
+  position: relative;
+  top: 140px;
+  left: 445px;
+
+  h2 {
+    color: $textcolor;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .frame-2 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 25px;
+    left: 24px;
+    //position: absolute;
+    top: 92px;
+
+    .frame-3 {
+      align-items: flex-start;
+      display: flex;
+      flex: 0 0 auto;
+      justify-content: space-between;
+      //position: relative;
+      width: 882px;
+
+      .text-wrapper-6 {
+        color: $textcolor;
+        font-family: "Open Sans-Bold", Helvetica;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: normal;
+        //position: relative;
+        width: 300px;
+      }
+
+      .text-wrapper-7 {
+        color: $textcolor;
+        font-family: "Open Sans-Regular", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: normal;
+        //position: relative;
+        width: 440px;
+        resize: none;
+      }
+
+      .edit {
+        width: 40px;
+        height: 25px;
+        object-fit: cover;
+      }
+
+      .delete {
+        fill: $red;
+      }
+
+      .img {
+        width: 28px;
+        height: 25px;
+      }
+    }
+  }
+
+  .frame-5 {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 24px;
+    left: 600px;
+    // position: absolute;
+    top: 650px;
+
+    .overlap-group-wrapper {
+      height: 60px;
+      position: relative;
+      width: 142px;
+
+      .div-wrapper {
+        background-color: $light;
+        border: 1px solid;
+        border-color: $textcolor;
+        border-radius: 20px;
+        height: 62px;
+        position: relative;
+
+        .text-wrapper-9 {
+          color: $textcolor;
+          font-family: "Open Sans-Bold", Helvetica;
+          font-size: 24px;
+          font-weight: 700;
+          left: 41px;
+          letter-spacing: 0;
+          line-height: normal;
+          position: absolute;
+          top: 14px;
+        }
+      }
+    }
+
+    .overlap-wrapper {
+      height: 60px;
+      margin-right: -2px;
+      position: relative;
+      width: 142px;
+
+      .overlap-3 {
+        background-color: $red;
+        border: 1px solid;
+        border-color: $textcolor;
+        border-radius: 20px;
+        height: 60px;
+        position: relative;
+
+        .text-wrapper-10 {
+          color: $light;
+          font-family: "Open Sans-Bold", Helvetica;
+          font-size: 24px;
+          font-weight: 700;
+          left: 31px;
+          letter-spacing: 0;
+          line-height: normal;
+          position: absolute;
+          top: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.alert-message {
+  color: $light;
+  width: 300px;
+  height: 80px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
