@@ -9,7 +9,7 @@ const Colleague = ({ colleague }) => {
       <p className="data long-text">{colleague?.email}</p>
       <p className="data long-text">
         {colleague?.phoneNumber?.length > 0
-          ? colleague?.phoneNumber?.slice(0, 2).join(', ')
+          ? colleague?.phoneNumber?.slice(0, 2).map(phone => phone.number).join(', ')
           : 'No phone number'}
       </p>
 
