@@ -2,15 +2,15 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from "./RootRoute"
 import ErrorPage from "./ErrorPage"
-import TasksPage from '../../pages/TasksPage'
-import DivisionsPage from '../../pages/DivisionsPage'
+import TasksPage from '../../pages/TasksPage.tsx'
+import DivisionsPage from '../../pages/DivisionsPage.tsx'
 import ColleaguesPage from '../../pages/ColleaguesPage'
 import NewColleaugePage from "../../pages/NewColleaugePage"
-import UsersPage from '../../pages/UsersPage'
-import AddressesPage from '../../pages/AddressesPage'
-import RoutesPage from '../../pages/RoutesPage'
-import LogisticsPage from '../../pages/LogisticsPage'
-import SettingsPage from '../../pages/SettingsPage'
+import UsersPage from '../../pages/UsersPage.tsx'
+import AddressesPage from '../../pages/AddressesPage.tsx'
+import RoutesPage from '../../pages/RoutesPage.tsx'
+import LogisticsPage from '../../pages/LogisticsPage.tsx'
+import SettingsPage from '../../pages/SettingsPage.tsx'
 import ColleagueProfilePage from '../../pages/ColleagueProfilePage'
 
 const BrowserRoutes = ({ colleagues }) => {
@@ -68,6 +68,10 @@ const BrowserRoutes = ({ colleagues }) => {
         {
           path: "/settings",
           element: <SettingsPage />
+        },
+        {
+          path: '/*',
+          element: <ErrorPage />
         }
       ]
     }

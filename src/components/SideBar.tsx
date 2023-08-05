@@ -1,6 +1,7 @@
+import React from "react"
 import { Link } from "react-router-dom"
 
-const SideBar = () => {
+const SideBar: React.FunctionComponent = () => {
   return (
     <div className="side-bar">
       <div className="container">
@@ -23,3 +24,4 @@ const SideBar = () => {
 }
 
 export default SideBar
+
