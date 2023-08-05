@@ -12,6 +12,8 @@ const ColleagueProfilePage = ({ colleagues }) => {
       <h2>Colleague profile</h2>
 
       <div className="frame-2">
+
+        {/* ONLY THE FULLNAME WORKS YET*/}
         <FullName colleague={colleague} />
 
         <div className="frame-3">
