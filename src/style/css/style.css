@@ -543,61 +543,59 @@ header div p {
   width: 28px;
   height: 25px;
 }
-.colleague-profile .frame-5 {
-  align-items: flex-start;
-  display: inline-flex;
+.colleague-profile .button-container-2 {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
   gap: 24px;
-  left: 600px;
-  top: 650px;
 }
-.colleague-profile .frame-5 .overlap-group-wrapper {
+.colleague-profile .button-container-2 .overlap-group-wrapper {
   height: 60px;
-  position: relative;
-  width: 142px;
+  width: 140px;
 }
-.colleague-profile .frame-5 .overlap-group-wrapper .div-wrapper {
+.colleague-profile .button-container-2 .overlap-group-wrapper .div-wrapper {
   background-color: #ffffff;
-  border: 1px solid;
-  border-color: #414042;
+  height: 60px;
+  border: 1px solid #414042;
   border-radius: 20px;
-  height: 62px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.colleague-profile .frame-5 .overlap-group-wrapper .div-wrapper .text-wrapper-9 {
+.colleague-profile .button-container-2 .overlap-group-wrapper .div-wrapper:hover {
+  border: 1px solid #000000;
+}
+.colleague-profile .button-container-2 .overlap-group-wrapper .div-wrapper:hover .back-btn {
+  color: #000000;
+}
+.colleague-profile .button-container-2 .overlap-group-wrapper .div-wrapper .back-btn {
   color: #414042;
+}
+.colleague-profile .button-container-2 .delete-btn,
+.colleague-profile .button-container-2 .back-btn {
   font-family: "Open Sans-Bold", Helvetica;
   font-size: 24px;
   font-weight: 700;
-  left: 41px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  top: 14px;
 }
-.colleague-profile .frame-5 .overlap-wrapper {
+.colleague-profile .button-container-2 .overlap-wrapper {
   height: 60px;
   margin-right: -2px;
   position: relative;
   width: 142px;
 }
-.colleague-profile .frame-5 .overlap-wrapper .overlap-3 {
+.colleague-profile .button-container-2 .overlap-wrapper .overlap-3 {
   background-color: #f44336;
-  border: 1px solid;
-  border-color: #414042;
-  border-radius: 20px;
   height: 60px;
-  position: relative;
+  border: 1px solid #414042;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.colleague-profile .frame-5 .overlap-wrapper .overlap-3 .text-wrapper-10 {
+.colleague-profile .button-container-2 .overlap-wrapper .overlap-3 .delete-btn {
   color: #ffffff;
-  font-family: "Open Sans-Bold", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  left: 31px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 14px;
 }
 
 .alert-message {

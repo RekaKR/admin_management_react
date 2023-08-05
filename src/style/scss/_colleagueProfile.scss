@@ -80,39 +80,46 @@
     }
   }
 
-  .frame-5 {
-    align-items: flex-start;
-    display: inline-flex;
+  .button-container-2 {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
     gap: 24px;
-    left: 600px;
-    // position: absolute;
-    top: 650px;
 
     .overlap-group-wrapper {
       height: 60px;
-      position: relative;
-      width: 142px;
+      width: 140px;
 
       .div-wrapper {
         background-color: $light;
-        border: 1px solid;
-        border-color: $textcolor;
+        height: 60px;
+        border: 1px solid $textcolor;
         border-radius: 20px;
-        height: 62px;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .text-wrapper-9 {
+        &:hover {
+          border: 1px solid $dark;
+
+          .back-btn {
+            color: $dark;
+          }
+        }
+
+        .back-btn {
           color: $textcolor;
-          font-family: "Open Sans-Bold", Helvetica;
-          font-size: 24px;
-          font-weight: 700;
-          left: 41px;
-          letter-spacing: 0;
-          line-height: normal;
-          position: absolute;
-          top: 14px;
         }
       }
+    }
+
+    .delete-btn,
+    .back-btn {
+      font-family: "Open Sans-Bold", Helvetica;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: normal;
     }
 
     .overlap-wrapper {
@@ -123,22 +130,15 @@
 
       .overlap-3 {
         background-color: $red;
-        border: 1px solid;
-        border-color: $textcolor;
-        border-radius: 20px;
         height: 60px;
-        position: relative;
+        border: 1px solid $textcolor;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .text-wrapper-10 {
+        .delete-btn {
           color: $light;
-          font-family: "Open Sans-Bold", Helvetica;
-          font-size: 24px;
-          font-weight: 700;
-          left: 31px;
-          letter-spacing: 0;
-          line-height: normal;
-          position: absolute;
-          top: 14px;
         }
       }
     }

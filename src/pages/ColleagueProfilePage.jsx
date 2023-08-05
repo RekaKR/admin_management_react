@@ -12,7 +12,6 @@ const ColleagueProfilePage = ({ colleagues }) => {
       <h2>Colleague profile</h2>
 
       <div className="frame-2">
-
         <FullName colleague={colleague} />
 
         <div className="frame-3">
@@ -82,21 +81,18 @@ const ColleagueProfilePage = ({ colleagues }) => {
         </div>
       </div>
 
-      <div className="frame-5">
+      <div className="button-container-2">
         <div className="overlap-group-wrapper">
-
-
-
           <Link to="/colleagues">
             <div className="div-wrapper">
-              <button className="text-wrapper-9">Back</button>
+              <button className="back-btn">Back</button>
             </div>
           </Link>
         </div>
 
         <div className="overlap-wrapper">
           <div className="overlap-3">
-            <button className="text-wrapper-10">Delete</button>
+            <button className="delete-btn">Delete</button>
           </div>
         </div>
       </div>
